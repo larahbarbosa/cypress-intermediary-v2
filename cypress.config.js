@@ -7,4 +7,3 @@ module.exports = defineConfig({
   fixturesFolder: false,
   video: false,
 })
-//fixing something 
