@@ -3,13 +3,10 @@ const { defineConfig } = require('cypress')
 module.exports = defineConfig({
   e2e: {
     baseUrl: 'http://localhost',
-  },
-  reporter: 'mochawesome',
-  reporterOptions: {
-    reportDir: 'cypress/results',
-    overwrite: false,
-    html: true,
-    json: false,
+    env: {
+      hideCredentials: true,
+      requestMode: true,
+    },
   },
   fixturesFolder: false,
   video: false,
